@@ -9,7 +9,7 @@ public class APITest {
         RestAssured.baseURI="https://api.restful-api.dev";
         Response response=RestAssured
                 .given()
-                .queryParam("id","objects/"7)
+                .queryParam("id","objects/"+9)
                 .get("/objects")
                 .then()
                 .statusCode(200)
