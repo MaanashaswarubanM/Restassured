@@ -1,0 +1,24 @@
+package model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class Product {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Data getData() {
+        return data;
+    }
+
+    public void setData(Data data) {
+        this.data = data;
+    }
+    private Data data;
+}
